@@ -1,0 +1,182 @@
+html{
+    scroll-behavior: smooth;
+}
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* css variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    top:0;
+    position: sticky;
+    
+   
+}
+/* navigation bar:logo and image */
+#logo{
+    margin: 4px 44px;
+    
+}
+#logo img{
+    margin: 0px 26px 0px 58px;
+    height: 41px;
+}
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display:flex;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(4, 3, 3);
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 53px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    
+}
+#navbar ul li {
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    display: block;
+    padding: 13px 22px;
+    border-radius:20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+/* background-color: white; */
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 103px;
+    height: 393px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+  content: "";
+  top: 0;
+    left: 0;
+  position: absolute;
+  background: url('CachedImage.jpg') no-repeat center center/cover;
+  height: 59%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+#home h1{
+    color:#ff9933;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+#home h3{
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-align: center;
+    font-size: 2.3rem;
+}
+#home p{font-family: 'Teko', sans-serif;
+    font-size:25px;
+    color: green;
+}
+#customer{
+    margin: 0px 13px 28px 13px;
+display: flex;    
+justify-content: center;
+align-items: center;
+}
+
+#customer .box{
+    border: 2px solid rebeccapurple;
+    padding: 23px;
+    margin: 0px 12px;
+    border-radius: 58px;
+    height: 317px;
+    width: 350px;
+    background: #8da3b763;
+}
+#customer .box img{
+height:156px;
+margin: auto;
+display: block;
+width: 184px;
+}
+
+/* #customer .box p{
+
+} */
+/* companies section */
+.companies-section{
+    height: 306px;
+}
+.companies-section::before{
+    content: "";
+  
+    position: absolute;
+    background: url('backcpy.jpg')no-repeat center center/cover;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: .9;
+    
+    
+    
+}
+
+#ourcompanies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#ourcompanies img{
+    height: 200px;
+}
+.companies-item{
+    padding: 5px;
+}
+/* utility Classes */
+.h-primary{
+    font-family: 'Teko', sans-serif;
+    font-size: 3.8rem;
+    padding: 4px;
+}
+.h-secoundary{font-family: 'Teko', sans-serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.textcenter{
+    text-align: center;
+}
+.butt{
+    
+    width: 242px;
+    height:31px;
+   border-radius: 6px;
+    background-image: linear-gradient(rgb(119, 212, 212),rgb(90, 167, 255));
+}
+.butt a{
+    color: white;
+}
+.butt:hover{
+    background-image: linear-gradient(black,gray);
+}
